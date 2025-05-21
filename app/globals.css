@@ -1,2 +1,5 @@
 @import "tailwindcss";
-
+*{
+    -webkit-user-select: none;
+    user-select: none;
+}

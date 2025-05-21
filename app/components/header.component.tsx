@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -5,20 +6,11 @@ export default function Header(){
     return(
     <>
     <header>
-        <nav className="grid grid-cols-5">
-            <Image alt="logo" width={100} height={100} src={`/logo1.jpg`}/>
-            <div>
-                <Link href={`#`}>Historia de la parroquia</Link>
-            </div>
-            <div>
-                <Link href={`#`}>Organización</Link>
-            </div>
-            <div>
-                <Link href={`#`}>Actividades</Link>
-            </div>
-            <div>
-                <Link href={`#`}>Biblia</Link>
-            </div>
+        <nav className="grid grid-cols-4 ">
+            <Image className="rounded-full" alt="logo" width={100} height={100} src={`/logo1.jpg`}/>
+            <Link className="py-10" href={`/historia`}>Historia de la parroquia</Link>
+            <Link className="py-10" href={`#`}>Organización</Link>
+            <Link className="py-10" href={`#`}>Actividades</Link>
         </nav>
     </header>
     </>)
