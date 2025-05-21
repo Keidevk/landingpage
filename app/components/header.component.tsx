@@ -6,7 +6,7 @@ export default function Header(){
     <>
     <header>
         <nav className="grid grid-cols-5">
-            <Image alt="logo" width={32} height={32} src={``}/>
+            <Image alt="logo" width={100} height={100} src={`/logo1.jpg`}/>
             <div>
                 <Link href={`#`}>Historia de la parroquia</Link>
             </div>
