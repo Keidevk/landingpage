@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { Cinzel, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 
+const josefinsans = Josefin_Sans({
+  subsets:['latin']
+})
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={` ${cinzel.className} ${josefinsans.className} antialiased`}
       >
         {children}
       </body>
